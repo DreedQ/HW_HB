@@ -1,0 +1,28 @@
+include ../../views/helpers/mixins
+.header
+    nav 
+        ul.logoBox
+            li.logo
+                include ../../assets/images/Logo.svg
+            li.desktop
+                include ../../assets/images/burger_menu.svg
+        ul.menu 
+            li Каталог товаров        
+            li доставка и оплата        
+            li Цены        
+            li Контакты
+        ul.call
+            li#tel +7 (812) 
+                span 509 21 98
+            li#call_me перезвоните мне
+        +mixinSocials(class='socialWebs')
+
+        ul.extraMenu 
+            li 
+                include ../../assets/images/search.svg
+            li 
+                include ../../assets/images/like.svg
+            li.mobile
+                include ../../assets/images/cart.svg
+            li.tab
+                include ../../assets/images/burger_menu.svg

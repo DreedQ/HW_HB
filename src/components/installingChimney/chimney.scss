@@ -1,0 +1,585 @@
+.wrapper{
+    max-width:1218px;
+    width: 100%;
+    margin: 0 auto;
+    .head{
+        h1{
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 73px;
+            color: $black;
+        }
+    }
+    .breadcrumbs{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #E5E5E5;
+        border-top: 1px solid #E5E5E5;
+        padding:14px 0;
+        p{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: $light-grey
+
+        }
+        .active{
+            color: $base-grey;
+        }
+    }
+    .content{
+        display: flex;
+        margin: 100px 0 47px 0;
+
+
+    }
+    .text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $black;
+        span{
+            color:#AE2236;
+            cursor:pointer;
+        }
+    }
+    .performances{
+        display: flex;
+        .performances_list{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            h3{
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 63px;
+                color:$black;
+            }
+            h2{
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 63px;
+                color:#AE2236;
+                text-transform: uppercase;
+                margin: 0 0 39px 0;
+            }
+            ul{
+                list-style: none;
+                margin: 0 0 0 45px;
+                list-style-image: url('../../assets/images/chimney/marker.svg');
+                li{
+                    margin:35px 0;
+                }
+            }
+        }
+        .performances_chimney{
+            width: 50%;
+            position: relative;
+            #dots1{
+                position: absolute;
+                top: 0;
+                left: 32%;
+            }
+            #dots2{
+                position: absolute;
+                bottom: 0;
+                right: 12%;
+            }
+            #chimney{
+                position: absolute;
+                bottom: 24%;
+                right: -15%;
+            }
+            #triangle1{
+                position: absolute;
+                top: 6%;
+                right: -20%;
+            }
+            #triangle2{
+                position: absolute;
+                top: 23%;
+                left: 5%;
+            }
+        }
+    }
+.fitInstruction{
+    ol{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, 1fr);
+        list-style: none;
+        counter-reset: item;
+        justify-items: stretch;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: stretch;
+        li{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            height: 85px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $black;
+            margin: 0 0 0 60px;
+            position: relative;
+            &:before {
+                position: absolute;
+                top:0;
+                left: -10%;
+                content: counters(item, "") "";
+                counter-increment: item;
+                font-weight: 700;
+                font-size: 70px;
+                line-height: 85px;
+                color: rgba(227, 62, 84, 0.2);
+              }
+        }
+    }
+}
+.art_header{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: $black;
+    margin:90px 0 51px 0;
+    position: relative;
+    &:before{
+        position: absolute;
+        top:-11px;
+        left:0;
+        content:'';
+        width: 74px;
+        border-top: 5px solid #E33E54;
+    }
+}
+.benefits{
+    width: 100%;
+    &_blocks{
+        display: flex;
+        width: 100%;
+        &_unit{
+            width: 100%;
+            margin: 51px 0 0 0;
+            h6{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: $black;
+                margin: 32px 0 10px 0;
+            }
+        }
+    }
+}
+.help{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .help_header{
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 40px;
+        margin: 98px auto 10px;
+        text-transform: uppercase;
+    }
+    .comment{
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .orange{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        color:#E33E54;
+        max-width: 250px;
+        width: 100%;
+        margin: 33px 0 38px 0;
+        li{
+            cursor: pointer;
+            svg{
+                width: 19px;
+                height: 19px;
+                path{
+                    fill:#EA6628;
+                }
+
+            }
+        }
+    }
+    .form{
+        width: 866px;
+        height: 260px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+        padding: 57px 55px 61px 59px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .form_header{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+            span{
+                font-weight: 700;
+                color:#EA6628;
+            }
+        }
+        form{
+            width:100%;
+            input{
+                width: 240px;
+                height: 56px;
+                border: 1px solid #E5E5E5;
+                border-radius: 4px;
+                padding:17px;
+            }
+            input[type='submit']{
+                text-transform:lowercase;
+                background: #215359;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+.video{
+    margin:65px 0 0 0;
+    &_back{
+        position: relative;
+        width: 100%;
+        height: 490px;
+        margin:135px 0 0 0;
+        #blob2{
+            position: absolute;
+            top:30px;
+            left: 0;
+        }
+        #blob3{
+            position: absolute;
+            top: -23px;
+            right: 145px;
+            transform: scale(1.33);
+            -webkit-transform: scale(1.33);
+            -moz-transform: scale(1.33);
+            -ms-transform: scale(1.33);
+            -o-transform: scale(1.33);
+}
+        .dots1{
+            position: absolute;
+            top: -70px;
+            right: 131px;
+        }
+        .dots2{
+            position: absolute;
+            bottom: 150px;
+            left: 60px;
+        }
+        #video{
+            position: absolute;
+            width:771px;
+            height: 438px;
+            top: -7%;
+            left: 15%;
+            z-index: 3;
+        }
+    }
+}
+.photos{
+    &_block{
+        display: flex;
+        flex-wrap: wrap;
+        font-display: auto;
+        justify-content: space-between;
+        margin:48px 0 136px 0;
+        .img{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 50px;
+                height: 50px;
+                top: 6px;
+                right: 10px;
+                border-top:4px solid #4C858B ;
+                border-right:4px solid #4C858B ;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 50px;
+                height: 50px;
+                bottom: 18px;
+                left: 11px;
+                border-bottom:4px solid #4C858B ;
+                border-left:4px solid #4C858B ;
+            }
+        }
+    }
+}
+}
+@media screen and (max-width:769px) {
+    .wrapper{
+       max-width:735px;
+       .head{
+        h1{
+            font-size: 45px;
+            line-height: 55px;
+        }
+       }
+       .content{
+        margin:60px 0 19px;
+       }
+       .performances{
+        .performances_list{
+                width:100%;
+                h3{
+                    font-size: 30px;
+                    line-height: 52px;
+                }
+                h2{
+                    font-size: 30px;
+                    line-height: 52px;
+                    margin: 0 0 21px 0;
+                }
+                ul{
+                    li{
+                        margin: 23px 0;
+                        padding: 0 0 0 17px;
+                    }
+                }
+            }
+            &_chimney{
+                display: none;
+            }
+       }
+       .fitInstruction{
+        ol{
+            li{
+                margin: 0px 0 16px 33px;
+                padding: 0 0 0 20px;
+            }
+        }
+       }
+       .video{
+        &_back{
+            margin: 34px 0 0 0;
+            #blob3,
+            #blob2,
+            .dots1,
+            .dots2{
+                display: none;
+            }
+            #video{
+                position: relative;
+                top: auto;
+                left: auto;
+                width: 100%;
+            }
+        }
+       }
+       .benefits{
+        &_blocks{
+            justify-content: center;
+            flex-wrap: wrap;
+            &_unit{
+                width: 50%;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    text-align: center;
+                }
+                &_wrapper{
+                    justify-content: center;
+                }
+            }
+        }
+       }
+       .help{
+            .help_header{
+                font-size: 40px;
+                line-height: 30px;
+            }
+            .comment{
+                font-size:16px;
+                line-height:30px;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 738px;
+                height: 390px;
+                padding: 49px 55px 47px;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 200px;
+                    justify-content: space-between;
+                    input{
+                        width: 354px;
+                    }
+                }
+            }
+       }
+       .photos{
+        .art_header{
+            margin:34px 0 0 0;
+        }
+        &_block{
+            margin:48px 0 56px 0;
+            .img{
+                width:30%;
+                img{
+                    width: -webkit-fill-available;
+                }
+            }
+        }
+       }
+       .art_header{
+        font-size: 30px;
+        line-height: 37px;
+        margin:72px 0 30px 0;
+       }
+
+    }
+}
+@media screen and (max-width:321px) {
+    .wrapper{
+        max-width:320px;
+        padding: 15px;
+        .head{
+         h1{
+             font-size: 30px;
+             line-height: 37px;
+         }
+        }
+        .content{
+         margin:60px 0 19px;
+        }
+        .performances{
+         .performances_list{
+                 width:100%;
+                 h3{
+                    font-size: 18px;
+                    line-height: 37px;
+                 }
+                 h2{
+                     font-size: 30px;
+                     line-height: 52px;
+                     margin: 0 0 21px 0;
+                 }
+                 ul{
+                     li{
+                         margin: 23px 0;
+                         padding: 0 0 0 17px;
+                     }
+                 }
+             }
+             &_chimney{
+                 display: none;
+             }
+        }
+        .fitInstruction{
+         ol{
+            display: flex;
+            flex-direction: column;
+             li{
+                 margin: 0px 0 16px 33px;
+                 padding: 0 0 0 20px;
+             }
+         }
+        }
+        .video{
+         &_back{
+             margin: 34px 0 0 0;
+             #blob3,
+             #blob2,
+             .dots1,
+             .dots2{
+                 display: none;
+             }
+             #video{
+                 position: relative;
+                 top: auto;
+                 left: auto;
+                 width: 100%;
+                 height: auto;
+             }
+         }
+        }
+        .benefits{
+         &_blocks{
+             justify-content: center;
+             flex-wrap: wrap;
+             &_unit{
+                 width:100%;
+                 justify-content: center;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 p{
+                     text-align: center;
+                 }
+                 &_wrapper{
+                     justify-content: center;
+                 }
+             }
+         }
+        }
+        .help{
+             .help_header{
+                font-size: 22px;
+                line-height: 30px;
+             }
+             .comment{
+                 font-size:16px;
+                 line-height:30px;
+             }
+             .form{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 width: 100%;
+                 height: 100%;
+                 padding: none;
+                 box-shadow: none;
+                 form {
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     height: 200px;
+                     justify-content: space-between;
+                     input{
+                         width: 100%;
+                     }
+                 }
+             }
+        }
+        .photos{
+         .art_header{
+             margin:34px 0 0 0;
+         }
+         &_block{
+             margin:48px 0 56px 0;
+             .img{
+                 width:30%;
+                 img{
+                     width: -webkit-fill-available;
+                 }
+             }
+         }
+        }
+        .art_header{
+         font-size: 30px;
+         line-height: 37px;
+         margin:72px 0 30px 0;
+        }
+ 
+     }
+}

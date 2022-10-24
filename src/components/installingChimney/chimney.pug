@@ -1,0 +1,101 @@
+include ../..//views/helpers/mixins
+.wrapper
+    .head 
+        h1 Монтаж дымоходов
+    .breadcrumbs
+        p Главная > 
+        p.active Монтаж дымоходов
+    article.content
+        p.text В <span>Дымоход.ру</span> вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть .
+    article.performances 
+        .performances_list
+            h3 Lorem ipsum dolor sit amet
+            h2 Lorem ipsum
+            ul 
+                li Доступные цены
+                li Собственное производсвто  Дымоходов
+                li Выполнение необходимых работ, связанных с установкой камина, печи, котла
+                li Гарантия (от трёх до десяти лет)
+                li Работаем чисто, аккуратно, убираем за собой, не сквернословим
+                li Только русские квалифицированные специалисты
+                li Устанавливаем любые дымоходы всех производителей
+        .performances_chimney 
+            include ../../assets/images/chimney/Blob.svg
+            include ../../assets/images/chimney/Group_dots_3x9vertical.svg
+            include ../../assets/images/chimney/Group_dots_3x9vertical copy.svg
+            include ../../assets/images/chimney/Triangle.svg
+            include ../../assets/images/chimney/Triangle copy.svg
+            img(src='../../assets/images/chimney/image 3.png')#chimney
+    article.fitInstruction 
+        h3.art_header Процесс выполнения монтажа
+        ol 
+            li Рассчёт предварительной заявки
+            li Замер объекта нашим инженером
+            li Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы 
+            li Изготовление Дымохода, покраска (если требуется)
+            li Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация
+            li Гарантийное обслуживание по соответствующем сроку
+    article.benefits
+        h3.art_header Почему Дымоход.ру?
+        p.text В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык» 
+        .benefits_blocks 
+            .benefits_blocks_unit
+                .bebefits_blocks_unit_wrapper 
+                    include ../../assets/images/guarantee.svg
+                h6 Большой гарантийный срок
+                p.text Крепёж, стыковка элементов – 10 лет
+                p.text Сквозная коррозия труб – 5 лет
+                p.text Гидроизоляция – 3 года
+            .benefits_blocks_unit
+                .bebefits_blocks_unit_wrapper 
+                    include ../../assets/images/architect.svg
+                h6 Помощь в покупке агрегата 
+                p.text (печи, камина, котла), а также качественной установке на объекте с последующим гарантийным сервисом
+            .benefits_blocks_unit
+                .bebefits_blocks_unit_wrapper 
+                    include ../../assets/images/review.svg
+                h6 Реальные отзывы клиентов
+                p.text Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.
+    article.help
+        h2.help_header необходима консультация?
+        p.comment оставьте заявку или свяжитесь с нами в социальных сетях
+        +mixinSocials(class='orange')
+        .form
+            h6.form_header Для <span>консультации</span> заполните форму!
+            p.form_comment С Вами свяжутся в ближайшее время
+            form(action='')#id1 
+                input(type="text" placeholder='Ваше имя') 
+                input(type="number" placeholder='Ваш телефон')
+                input(type="submit")
+    article.video
+        h3.art_header Видео об установке
+        p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .video_back 
+            include ../../assets/images/chimney/Blob2.svg
+            include ../../assets/images/chimney/Blob2 copy.svg
+            img(src="../../assets/images/chimney/Group_dots_3x9vertical.svg", alt="").dots1
+            img(src="../../assets/images/chimney/Group_dots_3x9vertical.svg", alt="").dots2
+            //- video(src='https://youtu.be/lGWhZptUnNU' controls autoplay)#video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/lGWhZptUnNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)#video
+    article.photos
+        h3.art_header Фото выполненных работ
+        p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .photos_block 
+            .img
+                img(src="../../assets/images/photo/Rectangle 197.png", alt="")
+            .img
+                img(src="../../assets/images/photo/Rectangle 197 (1).png", alt="")
+            .img
+                img(src="../../assets/images/photo/Rectangle 197 (2).png", alt="")
+            .img
+                img(src="../../assets/images/photo/Rectangle 197 (3).png", alt="")
+            .img
+                img(src="../../assets/images/photo/Rectangle 197 (4).png", alt="")
+            .img
+                img(src="../../assets/images/photo/Rectangle 197 (5).png", alt="")
+            .img
+                img(src="../../assets/images/photo/Rectangle 197 (6).png", alt="")
+            .img
+                img(src="../../assets/images/photo/Rectangle 197 (7).png", alt="")
+
+
