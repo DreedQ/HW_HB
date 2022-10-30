@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX homework</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <p>Введите свое имя пользователя на GitHub</p>
+        <form>
+            <input class="input-name js-input" type="text" name="name" placeholder="Введите свое имя GitHub">
+            <button class="load-button js-load"> Загрузить данные </button>
+            <button class="load-button load"> Загрузить данные из API</button>
+            <button class="load-button exercise2"> Задание 2</button>
+        </form>
+
+        <div class="results-container js-results">
+
+        </div>
+        <div class="results-container results"/>
+    </div>
+        <section class="modal">
+            <div class="insert">
+                <form action="" #="myForm">
+                    <input class="load-input" type="text" id="input1">
+                    <input class="load-button" type="button" id="send" value="Проверить значение">
+                </form>
+                <p id="answer"></p>
+                <button class="load-button" id="close_ex2">Закрыть окно с заданием</button>
+            </div>
+        </section>
+    </div>
+    
+</body>
+<script src="./assets/js/scripts.js"></script>
+
+</html>
