@@ -20,6 +20,7 @@ const WrapperStyled = styled.div`
   overflow-y: ${(props) => props.overflowY || "unset"};
   box-shadow: ${(props) => props.shadow || "none"};
   background: ${(props) => props.background || "initial"};
+  opacity: ${(props) => props.opacity || "initial"};
 `;
 
 const Wrapper = (props) => {

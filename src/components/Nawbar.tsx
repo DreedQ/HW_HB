@@ -1,13 +1,14 @@
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Wrapper from "./UI/Wrapper";
 import logo from "./images/logo 1.svg";
 import point from "./images/Point_on_map.svg";
 import Button from "./UI/Button";
 
-interface HeaderProps {}
+interface NavbarProps {}
 
-const HeaderStyled = styled.nav`
+const NavbarStyled = styled.nav`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -19,6 +20,7 @@ const HeaderStyled = styled.nav`
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    padding: 0;
     li {
       font-weight: 400;
       font-size: 14px;
@@ -53,9 +55,9 @@ const HeaderStyled = styled.nav`
   }
 `;
 
-const Header: FC<HeaderProps> = () => {
+const Navbar: FC<NavbarProps> = () => {
   return (
-    <HeaderStyled>
+    <NavbarStyled>
       <Wrapper
         justify="space-between"
         background="#F8F8F8"
@@ -68,7 +70,9 @@ const Header: FC<HeaderProps> = () => {
               <p>Главная</p>
             </li>
             <li>
-              <p>Новости</p>
+              <Link to="/news">
+                <p> Новости</p>
+              </Link>
             </li>
             <li>
               <p>Размещение и тарифы</p>
@@ -144,8 +148,8 @@ const Header: FC<HeaderProps> = () => {
           </li>
         </ul>
       </Wrapper>
-    </HeaderStyled>
+    </NavbarStyled>
   );
 };
 
-export default Header;
+export default Navbar;

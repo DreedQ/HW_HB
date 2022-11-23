@@ -6,9 +6,14 @@ declare module "styled-components" {
     display?: string;
     direction?: string;
     width?: string;
+    fill: string;
     color?: {
-      main: string;
-      secondary: string;
+      beige: {};
+      violet: {};
+      white: {};
+      sienna: {};
+      mustard: {};
+      violetGradient: {};
     };
   }
 }
